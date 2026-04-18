@@ -1,0 +1,755 @@
+{
+  "timestamp": "2026-04-18 14:40:12",
+  "algorithm": "LBPH (Local Binary Patterns Histograms)",
+  "detector": "Haar Cascade",
+  "registered_count": 24,
+  "total_tests": 72,
+  "success_count": 7,
+  "fail_count": 27,
+  "unknown_count": 38,
+  "accuracy_rate": "9.7%",
+  "registered_persons": [
+    "Al_Gore",
+    "Al_Sharpton",
+    "Alejandro_Toledo",
+    "Ali_Naimi",
+    "Alvaro_Uribe",
+    "Amelia_Vega",
+    "Amelie_Mauresmo",
+    "Ana_Guevara",
+    "Ana_Palacio",
+    "Andre_Agassi",
+    "Andy_Roddick",
+    "Angela_Bassett",
+    "Ann_Veneman",
+    "Anna_Kournikova",
+    "Antonio_Palocci",
+    "Ari_Fleischer",
+    "Ariel_Sharon",
+    "Arminio_Fraga",
+    "Arnold_Schwarzenegger",
+    "Atal_Bihari_Vajpayee",
+    "Bill_Clinton",
+    "Bill_Frist",
+    "Bill_Graham",
+    "Bill_McBride"
+  ],
+  "detailed_results": [
+    {
+      "name": "Al_Gore",
+      "train_files": [
+        "Al_Gore_1.jpg",
+        "Al_Gore_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Al_Gore_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Al_Gore_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Al_Gore_5.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Al_Sharpton",
+      "train_files": [
+        "Al_Sharpton_0.jpg",
+        "Al_Sharpton_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Al_Sharpton_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Al_Sharpton_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Al_Sharpton_5.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Alejandro_Toledo",
+      "train_files": [
+        "Alejandro_Toledo_1.jpg",
+        "Alejandro_Toledo_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Alejandro_Toledo_3.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Alejandro_Toledo_4.jpg",
+          "predicted": "Ana_Palacio",
+          "confidence": 99.07122622684889,
+          "accuracy": 33.952515848767405,
+          "match": false
+        },
+        {
+          "test_file": "Alejandro_Toledo_5.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Ali_Naimi",
+      "train_files": [
+        "Ali_Naimi_0.jpg",
+        "Ali_Naimi_1.jpg",
+        "Ali_Naimi_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Ali_Naimi_3.jpg",
+          "predicted": "Ali_Naimi",
+          "confidence": 99.49823945887417,
+          "accuracy": 33.66784036075055,
+          "match": true
+        },
+        {
+          "test_file": "Ali_Naimi_4.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Ali_Naimi_5.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Alvaro_Uribe",
+      "train_files": [
+        "Alvaro_Uribe_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Alvaro_Uribe_3.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Alvaro_Uribe_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Alvaro_Uribe_5.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Amelia_Vega",
+      "train_files": [
+        "Amelia_Vega_0.jpg",
+        "Amelia_Vega_1.jpg",
+        "Amelia_Vega_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Amelia_Vega_3.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Amelia_Vega_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Amelia_Vega_5.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Amelie_Mauresmo",
+      "train_files": [
+        "Amelie_Mauresmo_0.jpg",
+        "Amelie_Mauresmo_1.jpg",
+        "Amelie_Mauresmo_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Amelie_Mauresmo_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Amelie_Mauresmo_4.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Amelie_Mauresmo_5.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Ana_Guevara",
+      "train_files": [
+        "Ana_Guevara_1.jpg",
+        "Ana_Guevara_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Ana_Guevara_3.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Ana_Guevara_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Ana_Guevara_5.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Ana_Palacio",
+      "train_files": [
+        "Ana_Palacio_0.jpg",
+        "Ana_Palacio_1.jpg",
+        "Ana_Palacio_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Ana_Palacio_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Ana_Palacio_4.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Ana_Palacio_5.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Andre_Agassi",
+      "train_files": [
+        "Andre_Agassi_0.jpg",
+        "Andre_Agassi_1.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Andre_Agassi_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Andre_Agassi_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Andre_Agassi_5.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Andy_Roddick",
+      "train_files": [
+        "Andy_Roddick_1.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Andy_Roddick_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Andy_Roddick_4.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Andy_Roddick_5.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Angela_Bassett",
+      "train_files": [
+        "Angela_Bassett_0.jpg",
+        "Angela_Bassett_1.jpg",
+        "Angela_Bassett_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Angela_Bassett_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Angela_Bassett_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Angela_Bassett_5.jpg",
+          "predicted": "Angela_Bassett",
+          "confidence": 84.5537656463431,
+          "accuracy": 43.63082290243794,
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "Ann_Veneman",
+      "train_files": [
+        "Ann_Veneman_0.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Ann_Veneman_3.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Ann_Veneman_4.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Ann_Veneman_5.jpg",
+          "predicted": "Ann_Veneman",
+          "confidence": 76.17084306512477,
+          "accuracy": 49.21943795658349,
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "Anna_Kournikova",
+      "train_files": [
+        "Anna_Kournikova_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Anna_Kournikova_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Anna_Kournikova_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Anna_Kournikova_5.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Antonio_Palocci",
+      "train_files": [
+        "Antonio_Palocci_1.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Antonio_Palocci_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Antonio_Palocci_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Antonio_Palocci_5.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Ari_Fleischer",
+      "train_files": [
+        "Ari_Fleischer_1.jpg",
+        "Ari_Fleischer_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Ari_Fleischer_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Ari_Fleischer_4.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Ari_Fleischer_5.jpg",
+          "predicted": "Ari_Fleischer",
+          "confidence": 83.65065248942665,
+          "accuracy": 44.232898340382235,
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "Ariel_Sharon",
+      "train_files": [
+        "Ariel_Sharon_0.jpg",
+        "Ariel_Sharon_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Ariel_Sharon_3.jpg",
+          "predicted": "Ariel_Sharon",
+          "confidence": 95.3423098894862,
+          "accuracy": 36.43846007367586,
+          "match": true
+        },
+        {
+          "test_file": "Ariel_Sharon_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Ariel_Sharon_5.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Arminio_Fraga",
+      "train_files": [
+        "Arminio_Fraga_1.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Arminio_Fraga_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Arminio_Fraga_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Arminio_Fraga_5.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Arnold_Schwarzenegger",
+      "train_files": [
+        "Arnold_Schwarzenegger_0.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Arnold_Schwarzenegger_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Arnold_Schwarzenegger_4.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Arnold_Schwarzenegger_5.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Atal_Bihari_Vajpayee",
+      "train_files": [
+        "Atal_Bihari_Vajpayee_0.jpg",
+        "Atal_Bihari_Vajpayee_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Atal_Bihari_Vajpayee_3.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Atal_Bihari_Vajpayee_4.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Atal_Bihari_Vajpayee_5.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Bill_Clinton",
+      "train_files": [
+        "Bill_Clinton_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Bill_Clinton_3.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Bill_Clinton_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Bill_Clinton_5.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Bill_Frist",
+      "train_files": [
+        "Bill_Frist_1.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Bill_Frist_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Bill_Frist_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Bill_Frist_5.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Bill_Graham",
+      "train_files": [
+        "Bill_Graham_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Bill_Graham_3.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Bill_Graham_4.jpg",
+          "predicted": "Unknown",
+          "confidence": null,
+          "accuracy": null,
+          "match": false
+        },
+        {
+          "test_file": "Bill_Graham_5.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Bill_McBride",
+      "train_files": [
+        "Bill_McBride_0.jpg",
+        "Bill_McBride_1.jpg",
+        "Bill_McBride_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Bill_McBride_3.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": true
+        },
+        {
+          "test_file": "Bill_McBride_4.jpg",
+          "predicted": "Bill_Graham",
+          "confidence": 99.40785635623563,
+          "accuracy": 33.72809576250958,
+          "match": false
+        },
+        {
+          "test_file": "Bill_McBride_5.jpg",
+          "predicted": "Bill_McBride",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": true
+        }
+      ]
+    }
+  ]
+}

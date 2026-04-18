@@ -1,0 +1,849 @@
+{
+  "timestamp": "2026-04-18 14:43:06",
+  "algorithm": "LBPH (Local Binary Patterns Histograms)",
+  "detector": "Haar Cascade (scaleFactor=1.05, minNeighbors=3)",
+  "registered_count": 30,
+  "total_tests": 72,
+  "success_count": 18,
+  "fail_count": 54,
+  "unknown_count": 0,
+  "accuracy_rate": "25.0%",
+  "registered_persons": [
+    "Ali_Naimi",
+    "Bill_McBride",
+    "Donald_Rumsfeld",
+    "Igor_Ivanov",
+    "Jon_Gruden",
+    "Kevin_Costner",
+    "Larry_Brown",
+    "Li_Zhaoxing",
+    "Paul_Martin",
+    "Rob_Marshall",
+    "Vaclav_Havel",
+    "William_Donaldson",
+    "Alejandro_Toledo",
+    "Amelia_Vega",
+    "Amelie_Mauresmo",
+    "Ana_Palacio",
+    "Bob_Stoops",
+    "Britney_Spears",
+    "Charlton_Heston",
+    "Clint_Eastwood",
+    "Dick_Cheney",
+    "George_HW_Bush",
+    "Gordon_Brown",
+    "Gray_Davis",
+    "Hillary_Clinton",
+    "Holly_Hunter",
+    "Jackie_Chan",
+    "Javier_Solana",
+    "Jean-David_Levitte",
+    "Jean_Chretien"
+  ],
+  "detailed_results": [
+    {
+      "name": "Ali_Naimi",
+      "train_files": [
+        "Ali_Naimi_0.jpg",
+        "Ali_Naimi_1.jpg",
+        "Ali_Naimi_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Ali_Naimi_3.jpg",
+          "predicted": "Ali_Naimi",
+          "confidence": 99.49823945887417,
+          "accuracy": 33.66784036075055,
+          "match": true
+        },
+        {
+          "test_file": "Ali_Naimi_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Ali_Naimi_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Bill_McBride",
+      "train_files": [
+        "Bill_McBride_0.jpg",
+        "Bill_McBride_1.jpg",
+        "Bill_McBride_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Bill_McBride_3.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Bill_McBride_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Bill_McBride_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Donald_Rumsfeld",
+      "train_files": [
+        "Donald_Rumsfeld_0.jpg",
+        "Donald_Rumsfeld_1.jpg",
+        "Donald_Rumsfeld_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Donald_Rumsfeld_3.jpg",
+          "predicted": "Donald_Rumsfeld",
+          "confidence": 91.0272919949328,
+          "accuracy": 39.3151386700448,
+          "match": true
+        },
+        {
+          "test_file": "Donald_Rumsfeld_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Donald_Rumsfeld_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Igor_Ivanov",
+      "train_files": [
+        "Igor_Ivanov_0.jpg",
+        "Igor_Ivanov_1.jpg",
+        "Igor_Ivanov_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Igor_Ivanov_3.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Igor_Ivanov_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Igor_Ivanov_5.jpg",
+          "predicted": "Igor_Ivanov",
+          "confidence": 95.81420032632658,
+          "accuracy": 36.1238664491156,
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "Jon_Gruden",
+      "train_files": [
+        "Jon_Gruden_0.jpg",
+        "Jon_Gruden_1.jpg",
+        "Jon_Gruden_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Jon_Gruden_3.jpg",
+          "predicted": "Jon_Gruden",
+          "confidence": 94.19708499680135,
+          "accuracy": 37.20194333546577,
+          "match": true
+        },
+        {
+          "test_file": "Jon_Gruden_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Jon_Gruden_5.jpg",
+          "predicted": "Jon_Gruden",
+          "confidence": 99.38951582802527,
+          "accuracy": 33.74032278131649,
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "Kevin_Costner",
+      "train_files": [
+        "Kevin_Costner_0.jpg",
+        "Kevin_Costner_1.jpg",
+        "Kevin_Costner_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Kevin_Costner_3.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Kevin_Costner_4.jpg",
+          "predicted": "Kevin_Costner",
+          "confidence": 80.19077290303345,
+          "accuracy": 46.539484731311035,
+          "match": true
+        },
+        {
+          "test_file": "Kevin_Costner_5.jpg",
+          "predicted": "Kevin_Costner",
+          "confidence": 85.0287574241703,
+          "accuracy": 43.314161717219804,
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "Larry_Brown",
+      "train_files": [
+        "Larry_Brown_0.jpg",
+        "Larry_Brown_1.jpg",
+        "Larry_Brown_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Larry_Brown_3.jpg",
+          "predicted": "Hillary_Clinton",
+          "confidence": 98.68918255870594,
+          "accuracy": 34.207211627529375,
+          "match": false
+        },
+        {
+          "test_file": "Larry_Brown_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Larry_Brown_5.jpg",
+          "predicted": "Javier_Solana",
+          "confidence": 98.85709497812006,
+          "accuracy": 34.09527001458663,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Li_Zhaoxing",
+      "train_files": [
+        "Li_Zhaoxing_0.jpg",
+        "Li_Zhaoxing_1.jpg",
+        "Li_Zhaoxing_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Li_Zhaoxing_3.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Li_Zhaoxing_4.jpg",
+          "predicted": "Li_Zhaoxing",
+          "confidence": 97.02634208212505,
+          "accuracy": 35.31577194524996,
+          "match": true
+        },
+        {
+          "test_file": "Li_Zhaoxing_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Paul_Martin",
+      "train_files": [
+        "Paul_Martin_0.jpg",
+        "Paul_Martin_1.jpg",
+        "Paul_Martin_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Paul_Martin_3.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Paul_Martin_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Paul_Martin_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Rob_Marshall",
+      "train_files": [
+        "Rob_Marshall_0.jpg",
+        "Rob_Marshall_1.jpg",
+        "Rob_Marshall_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Rob_Marshall_3.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Rob_Marshall_4.jpg",
+          "predicted": "Rob_Marshall",
+          "confidence": 90.93675391441354,
+          "accuracy": 39.37549739039097,
+          "match": true
+        },
+        {
+          "test_file": "Rob_Marshall_5.jpg",
+          "predicted": "Kevin_Costner",
+          "confidence": 98.10703674539977,
+          "accuracy": 34.59530883640015,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Vaclav_Havel",
+      "train_files": [
+        "Vaclav_Havel_0.jpg",
+        "Vaclav_Havel_1.jpg",
+        "Vaclav_Havel_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Vaclav_Havel_3.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Vaclav_Havel_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Vaclav_Havel_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "William_Donaldson",
+      "train_files": [
+        "William_Donaldson_0.jpg",
+        "William_Donaldson_1.jpg",
+        "William_Donaldson_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "William_Donaldson_3.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "William_Donaldson_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "William_Donaldson_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Alejandro_Toledo",
+      "train_files": [
+        "Alejandro_Toledo_1.jpg",
+        "Alejandro_Toledo_2.jpg",
+        "Alejandro_Toledo_3.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Alejandro_Toledo_4.jpg",
+          "predicted": "Alejandro_Toledo",
+          "confidence": 98.63639672314804,
+          "accuracy": 34.24240218456798,
+          "match": true
+        },
+        {
+          "test_file": "Alejandro_Toledo_5.jpg",
+          "predicted": "Alejandro_Toledo",
+          "confidence": 95.42489955452223,
+          "accuracy": 36.38340029698518,
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "Amelia_Vega",
+      "train_files": [
+        "Amelia_Vega_0.jpg",
+        "Amelia_Vega_1.jpg",
+        "Amelia_Vega_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Amelia_Vega_3.jpg",
+          "predicted": "Hillary_Clinton",
+          "confidence": 99.29948865665772,
+          "accuracy": 33.80034089556152,
+          "match": false
+        },
+        {
+          "test_file": "Amelia_Vega_5.jpg",
+          "predicted": "Britney_Spears",
+          "confidence": 96.67947528738905,
+          "accuracy": 35.54701647507397,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Amelie_Mauresmo",
+      "train_files": [
+        "Amelie_Mauresmo_0.jpg",
+        "Amelie_Mauresmo_1.jpg",
+        "Amelie_Mauresmo_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Amelie_Mauresmo_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Amelie_Mauresmo_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Ana_Palacio",
+      "train_files": [
+        "Ana_Palacio_0.jpg",
+        "Ana_Palacio_1.jpg",
+        "Ana_Palacio_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Ana_Palacio_4.jpg",
+          "predicted": "Gordon_Brown",
+          "confidence": 99.00710927391191,
+          "accuracy": 33.99526048405873,
+          "match": false
+        },
+        {
+          "test_file": "Ana_Palacio_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Bob_Stoops",
+      "train_files": [
+        "Bob_Stoops_0.jpg",
+        "Bob_Stoops_2.jpg",
+        "Bob_Stoops_3.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Bob_Stoops_4.jpg",
+          "predicted": "Ana_Palacio",
+          "confidence": 91.67022101904992,
+          "accuracy": 38.88651932063338,
+          "match": false
+        },
+        {
+          "test_file": "Bob_Stoops_5.jpg",
+          "predicted": "Bob_Stoops",
+          "confidence": 89.19046826033598,
+          "accuracy": 40.53968782644268,
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "Britney_Spears",
+      "train_files": [
+        "Britney_Spears_0.jpg",
+        "Britney_Spears_1.jpg",
+        "Britney_Spears_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Britney_Spears_3.jpg",
+          "predicted": "Britney_Spears",
+          "confidence": 94.76843850089612,
+          "accuracy": 36.82104099940259,
+          "match": true
+        },
+        {
+          "test_file": "Britney_Spears_5.jpg",
+          "predicted": "Britney_Spears",
+          "confidence": 91.60843366544755,
+          "accuracy": 38.927710889701636,
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "Charlton_Heston",
+      "train_files": [
+        "Charlton_Heston_0.jpg",
+        "Charlton_Heston_1.jpg",
+        "Charlton_Heston_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Charlton_Heston_4.jpg",
+          "predicted": "Rob_Marshall",
+          "confidence": 99.65445682317113,
+          "accuracy": 33.563695451219246,
+          "match": false
+        },
+        {
+          "test_file": "Charlton_Heston_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Clint_Eastwood",
+      "train_files": [
+        "Clint_Eastwood_0.jpg",
+        "Clint_Eastwood_1.jpg",
+        "Clint_Eastwood_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Clint_Eastwood_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Clint_Eastwood_5.jpg",
+          "predicted": "Bob_Stoops",
+          "confidence": 98.87113115818383,
+          "accuracy": 34.08591256121078,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Dick_Cheney",
+      "train_files": [
+        "Dick_Cheney_0.jpg",
+        "Dick_Cheney_2.jpg",
+        "Dick_Cheney_3.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Dick_Cheney_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Dick_Cheney_5.jpg",
+          "predicted": "Dick_Cheney",
+          "confidence": 89.84436998969129,
+          "accuracy": 40.103753340205806,
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "George_HW_Bush",
+      "train_files": [
+        "George_HW_Bush_0.jpg",
+        "George_HW_Bush_1.jpg",
+        "George_HW_Bush_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "George_HW_Bush_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "George_HW_Bush_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Gordon_Brown",
+      "train_files": [
+        "Gordon_Brown_0.jpg",
+        "Gordon_Brown_1.jpg",
+        "Gordon_Brown_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Gordon_Brown_3.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Gordon_Brown_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Gray_Davis",
+      "train_files": [
+        "Gray_Davis_0.jpg",
+        "Gray_Davis_1.jpg",
+        "Gray_Davis_3.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Gray_Davis_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Gray_Davis_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Hillary_Clinton",
+      "train_files": [
+        "Hillary_Clinton_0.jpg",
+        "Hillary_Clinton_2.jpg",
+        "Hillary_Clinton_3.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Hillary_Clinton_4.jpg",
+          "predicted": "Ana_Palacio",
+          "confidence": 96.07031026087031,
+          "accuracy": 35.95312649275312,
+          "match": false
+        },
+        {
+          "test_file": "Hillary_Clinton_5.jpg",
+          "predicted": "Hillary_Clinton",
+          "confidence": 83.87121510079797,
+          "accuracy": 44.08585659946802,
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "Holly_Hunter",
+      "train_files": [
+        "Holly_Hunter_1.jpg",
+        "Holly_Hunter_2.jpg",
+        "Holly_Hunter_3.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Holly_Hunter_4.jpg",
+          "predicted": "Britney_Spears",
+          "confidence": 83.72329766674294,
+          "accuracy": 44.18446822217138,
+          "match": false
+        },
+        {
+          "test_file": "Holly_Hunter_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Jackie_Chan",
+      "train_files": [
+        "Jackie_Chan_0.jpg",
+        "Jackie_Chan_1.jpg",
+        "Jackie_Chan_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Jackie_Chan_3.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Jackie_Chan_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Javier_Solana",
+      "train_files": [
+        "Javier_Solana_1.jpg",
+        "Javier_Solana_2.jpg",
+        "Javier_Solana_3.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Javier_Solana_4.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": false
+        },
+        {
+          "test_file": "Javier_Solana_5.jpg",
+          "predicted": "Hillary_Clinton",
+          "confidence": 94.49560607344976,
+          "accuracy": 37.00292928436683,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Jean-David_Levitte",
+      "train_files": [
+        "Jean-David_Levitte_0.jpg",
+        "Jean-David_Levitte_2.jpg",
+        "Jean-David_Levitte_3.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Jean-David_Levitte_4.jpg",
+          "predicted": "Donald_Rumsfeld",
+          "confidence": 95.23507291631978,
+          "accuracy": 36.50995138912015,
+          "match": false
+        },
+        {
+          "test_file": "Jean-David_Levitte_5.jpg",
+          "predicted": "Javier_Solana",
+          "confidence": 97.80641969865698,
+          "accuracy": 34.79572020089534,
+          "match": false
+        }
+      ]
+    },
+    {
+      "name": "Jean_Chretien",
+      "train_files": [
+        "Jean_Chretien_0.jpg",
+        "Jean_Chretien_1.jpg",
+        "Jean_Chretien_2.jpg"
+      ],
+      "tests": [
+        {
+          "test_file": "Jean_Chretien_3.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": true
+        },
+        {
+          "test_file": "Jean_Chretien_5.jpg",
+          "predicted": "Jean_Chretien",
+          "confidence": 1.7976931348623157e+308,
+          "accuracy": 0.0,
+          "match": true
+        }
+      ]
+    }
+  ]
+}
