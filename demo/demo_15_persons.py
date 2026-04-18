@@ -1,0 +1,202 @@
+import os
+import sys
+import time
+import json
+import cv2
+
+demo_dir = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, demo_dir)
+
+from main import SmartGlassesDemo
+
+known_dir = os.path.join(demo_dir, 'sample_faces', 'known')
+db_path = os.path.join(demo_dir, 'data', 'face_demo.json')
+report_dir = os.path.join(os.path.dirname(demo_dir), 'report')
+os.makedirs(report_dir, exist_ok=True)
+
+if os.path.exists(db_path):
+    os.remove(db_path)
+
+print("="*60)
+print("  智能眼镜人脸识别 Demo - 15人测试（优化版）")
+print("="*60)
+
+cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+
+person_images = {}
+for f in sorted(os.listdir(known_dir)):
+    if not f.endswith('.jpg'):
+        continue
+    name = os.path.splitext(f)[0].rsplit('_', 1)[0]
+    if name not in person_images:
+        person_images[name] = []
+    person_images[name].append(f)
+
+# 筛选高检测率人员
+good_persons = []
+for name, imgs in person_images.items():
+    if len(imgs) < 6:
+        continue
+    detected = 0
+    for img in imgs:
+        path = os.path.join(known_dir, img)
+        gray = cv2.imread(path, 0)
+        faces = cascade.detectMultiScale(gray, 1.05, 3, minSize=(30, 30))
+        if len(faces) > 0:
+            detected += 1
+    if detected >= 5:
+        good_persons.append((name, imgs, detected))
+
+# 选前15个
+candidates = sorted(good_persons, key=lambda x: x[2], reverse=True)[:15]
+print(f"\n选择高检测率人员: {len(candidates)}人")
+
+d = SmartGlassesDemo(db_path)
+
+registered = []
+print("\n[1] 注册人脸（每人5张训练图片）...")
+for name, images, _ in candidates:
+    train_files = []
+    test_files = []
+    for img in images:
+        path = os.path.join(known_dir, img)
+        gray = cv2.imread(path, 0)
+        faces = cascade.detectMultiScale(gray, 1.05, 3, minSize=(30, 30))
+        if len(faces) > 0:
+            if len(train_files) < 5:
+                if d.register_face(path, name):
+                    train_files.append(img)
+            else:
+                test_files.append(img)
+
+    if len(train_files) > 0:
+        registered.append({
+            'name': name,
+            'train_files': train_files,
+            'test_files': test_files[:3]
+        })
+        print(f"  注册: {name} (训练:{len(train_files)}张, 待测:{len(test_files[:3])}张)")
+
+print(f"\n注册完成: {len(registered)} 人")
+
+print("\n[2] 识别测试...")
+d.reload_faces()
+
+test_results = []
+total_tests = 0
+success_count = 0
+fail_count = 0
+unknown_count = 0
+
+for person in registered:
+    name = person['name']
+    test_files = person['test_files']
+
+    person_results = {
+        'name': name,
+        'train_files': person['train_files'],
+        'tests': []
+    }
+
+    for test_file in test_files:
+        test_path = os.path.join(known_dir, test_file)
+        total_tests += 1
+
+        results = d.recognize_from_image(test_path)
+        if results:
+            pred_name = results[0]['name']
+            conf = results[0]['confidence']
+            accuracy = results[0]['accuracy']
+            match = pred_name == name
+
+            if match:
+                success_count += 1
+                status = "正确"
+            else:
+                fail_count += 1
+                status = f"错误(应为{name})"
+
+            print(f"  {name}: {test_file} -> {pred_name} (准确率: {accuracy:.1f}%) {status}")
+            person_results['tests'].append({
+                'test_file': test_file,
+                'predicted': pred_name,
+                'confidence': conf,
+                'accuracy': accuracy,
+                'match': match
+            })
+        else:
+            unknown_count += 1
+            print(f"  {name}: {test_file} -> 无识别结果")
+            person_results['tests'].append({
+                'test_file': test_file,
+                'predicted': 'Unknown',
+                'confidence': None,
+                'accuracy': None,
+                'match': False
+            })
+
+    test_results.append(person_results)
+
+accuracy_rate = (success_count / total_tests * 100) if total_tests > 0 else 0
+
+print(f"\n{'='*60}")
+print(f"测试结果汇总:")
+print(f"  注册人数: {len(registered)}")
+print(f"  测试图片数: {total_tests}")
+print(f"  识别正确: {success_count}")
+print(f"  识别错误: {fail_count}")
+print(f"  未识别: {unknown_count}")
+print(f"  准确率: {accuracy_rate:.1f}%")
+print(f"{'='*60}")
+
+report = {
+    'timestamp': time.strftime('%Y-%m-%d %H:%M:%S'),
+    'algorithm': 'LBPH (Local Binary Patterns Histograms)',
+    'detector': 'Haar Cascade (scaleFactor=1.05, minNeighbors=3)',
+    'threshold': 'LBPH radius=1, neighbors=8, grid=8x8, threshold=100',
+    'registered_count': len(registered),
+    'total_tests': total_tests,
+    'success_count': success_count,
+    'fail_count': fail_count,
+    'unknown_count': unknown_count,
+    'accuracy_rate': f"{accuracy_rate:.1f}%",
+    'registered_persons': [p['name'] for p in registered],
+    'detailed_results': test_results
+}
+
+report_path = os.path.join(report_dir, f"demo_report_{time.strftime('%Y%m%d_%H%M%S')}.json")
+with open(report_path, 'w', encoding='utf-8') as f:
+    json.dump(report, f, indent=2, ensure_ascii=False)
+
+md_path = os.path.join(report_dir, f"demo_report_{time.strftime('%Y%m%d_%H%M%S')}.md")
+with open(md_path, 'w', encoding='utf-8') as f:
+    f.write("# 智能眼镜人脸识别 Demo 测试报告\n\n")
+    f.write(f"## 测试时间\n{report['timestamp']}\n\n")
+    f.write("## 算法说明\n")
+    f.write(f"- 人脸识别: {report['algorithm']}\n")
+    f.write(f"- 人脸检测: {report['detector']}\n")
+    f.write(f"- LBPH参数: {report['threshold']}\n\n")
+    f.write("## 测试结果汇总\n\n")
+    f.write(f"| 指标 | 数值 |\n")
+    f.write(f"|------|------|\n")
+    f.write(f"| 注册人数 | {report['registered_count']} |\n")
+    f.write(f"| 训练图片数 | {sum(len(p['train_files']) for p in test_results)} |\n")
+    f.write(f"| 测试图片数 | {report['total_tests']} |\n")
+    f.write(f"| 识别正确 | {report['success_count']} |\n")
+    f.write(f"| 识别错误 | {report['fail_count']} |\n")
+    f.write(f"| 未识别 | {report['unknown_count']} |\n")
+    f.write(f"| **准确率** | **{report['accuracy_rate']}** |\n\n")
+    f.write("## 详细结果\n\n")
+    f.write("| 姓名 | 测试图片 | 识别结果 | 准确率 | 状态 |\n")
+    f.write("|------|----------|----------|--------|------|\n")
+    for person in test_results:
+        name = person['name']
+        for t in person['tests']:
+            status = "正确" if t['match'] else ("未识别" if t['predicted'] == 'Unknown' else "错误")
+            acc = f"{t['accuracy']:.1f}%" if t['accuracy'] is not None else "-"
+            f.write(f"| {name} | {t['test_file']} | {t['predicted']} | {acc} | {status} |\n")
+    f.write("\n---\n*报告由系统自动生成*\n")
+
+print(f"\nJSON报告: {report_path}")
+print(f"Markdown报告: {md_path}")
+print("\nDemo 运行完成!")

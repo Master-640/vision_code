@@ -38,4 +38,16 @@ Build/
 *.pt
 *.onnx
 *.h5
-/personal
+
+# Personal documents (not for repository)
+/personal/
+
+# Report files (generated locally)
+/report/
+
+# Dataset (too large for git)
+/demo/sample_faces/
+/demo/data/
+
+# LFW dataset
+lfw_*
